@@ -64,11 +64,11 @@ class _GalleryPageState extends State<GalleryPage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        GestureDetector(
-          onTap: () {
+        IconButton(
+          onPressed: () {
             Navigator.pop(context);
           },
-          child: Container(
+          icon: Container(
             width: 42,
             height: 42,
             decoration: BoxDecoration(
@@ -82,9 +82,9 @@ class _GalleryPageState extends State<GalleryPage> {
             ),
           ),
         ),
-        GestureDetector(
-          onTap: addImage,
-          child: Container(
+        IconButton(
+          onPressed: addImage,
+          icon: Container(
             width: 48,
             height: 48,
             decoration: BoxDecoration(
