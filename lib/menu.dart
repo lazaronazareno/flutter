@@ -3,6 +3,7 @@ import 'package:flutter_application_1/audio_player/player.dart';
 import 'package:flutter_application_1/entradas_de_datos/in_datos.dart';
 import 'package:flutter_application_1/gallery/gallery.dart';
 import 'package:flutter_application_1/gestor_habitos/home_hab.dart';
+import 'package:flutter_application_1/video_player_design/video_player_design.dart';
 
 class Menu extends StatelessWidget {
   const Menu({super.key});
@@ -57,6 +58,17 @@ class Menu extends StatelessWidget {
                 );
               },
               child: const Text("Reproductor de Audio"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const VideoPlayerDesign(),
+                  ),
+                );
+              },
+              child: const Text("Video player design"),
             ),
             ElevatedButton(
               onPressed: () {},
