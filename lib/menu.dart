@@ -3,6 +3,8 @@ import 'package:flutter_application_1/audio_player/player.dart';
 import 'package:flutter_application_1/entradas_de_datos/in_datos.dart';
 import 'package:flutter_application_1/gallery/gallery.dart';
 import 'package:flutter_application_1/gestor_habitos/home_hab.dart';
+import 'package:flutter_application_1/todo_bloc/todo_bloc_page.dart';
+import 'package:flutter_application_1/todo_provider/todo_provider.dart';
 import 'package:flutter_application_1/video_player_design/video_player_design.dart';
 
 class Menu extends StatelessWidget {
@@ -71,11 +73,27 @@ class Menu extends StatelessWidget {
               child: const Text("Video player design"),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TodoProvider(),
+                  ),
+                );
+              },
+              //para proyectos un poco mas simples y no tan complejos, más facil de aprender, escalabilidad limitada, mantenimiento moderado, optimizacion promedio
               child: const Text("Todo - Provider"),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const TodoBlocPage(),
+                  ),
+                );
+              },
+              //para proyectos un poco mas grandes y complejos, moderada dificultad de aprendizaje, escalabilidad muy alta, mantenimiento alto, estructura rigida, optimizacion excelente
               child: const Text("Todo - Bloc"),
             ),
           ],
