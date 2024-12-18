@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/adopt_app/adopt_app.dart';
 import 'package:flutter_application_1/audio_player/player.dart';
 import 'package:flutter_application_1/entradas_de_datos/in_datos.dart';
 import 'package:flutter_application_1/gallery/gallery.dart';
@@ -95,6 +96,18 @@ class Menu extends StatelessWidget {
               },
               //para proyectos un poco mas grandes y complejos, moderada dificultad de aprendizaje, escalabilidad muy alta, mantenimiento alto, estructura rigida, optimizacion excelente
               child: const Text("Todo - Bloc"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AdoptAppPage(),
+                  ),
+                );
+              },
+              //para proyectos un poco mas grandes y complejos, moderada dificultad de aprendizaje, escalabilidad muy alta, mantenimiento alto, estructura rigida, optimizacion excelente
+              child: const Text("Adopt App"),
             ),
           ],
         ),

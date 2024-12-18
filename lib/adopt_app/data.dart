@@ -1,0 +1,58 @@
+const List<Map<String, dynamic>> animalData = [
+  {
+    "id": "1",
+    "name": "",
+    "breed": "XX",
+    "age": 3,
+    "imageUrl": "",
+    "type": "dog",
+  },
+  {
+    "id": "2",
+    "name": "",
+    "breed": "XX",
+    "age": 3,
+    "imageUrl": "",
+    "type": "cat",
+  },
+  {
+    "id": "3",
+    "name": "",
+    "breed": "XX",
+    "age": 2,
+    "imageUrl": "",
+    "type": "dog",
+  },
+  {
+    "id": "4",
+    "name": "",
+    "breed": "XX",
+    "age": 1,
+    "imageUrl": "",
+    "type": "cat",
+  },
+  {
+    "id": "5",
+    "name": "",
+    "breed": "XX",
+    "age": 2,
+    "imageUrl": "",
+    "type": "dog",
+  },
+  {
+    "id": "6",
+    "name": "",
+    "breed": "XX",
+    "age": 1,
+    "imageUrl": "",
+    "type": "reptile",
+  },
+  {
+    "id": "7",
+    "name": "",
+    "breed": "XX",
+    "age": 3,
+    "imageUrl": "",
+    "type": "reptile",
+  }
+];

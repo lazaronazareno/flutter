@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/menu.dart';
-import 'package:flutter_application_1/todo_provider/todo_provider.dart';
-import 'package:provider/provider.dart';
+//import 'package:flutter_application_1/todo_provider/todo_provider.dart';
+//import 'package:provider/provider.dart';
 //import 'package:flutter_application_1/my_widgets.dart';
 
-void main() {
+/* void main() {
   runApp(ChangeNotifierProvider(
       create: (_) => TaskProvider(), child: const MaterialApp(home: Menu())));
+} */
+
+void main() {
+  runApp(const MaterialApp(home: Menu()));
 }
 
 /* void main() {
