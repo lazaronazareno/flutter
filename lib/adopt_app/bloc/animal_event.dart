@@ -9,6 +9,8 @@ sealed class AnimalEvent extends Equatable {
 
 class GetAnimals extends AnimalEvent {}
 
+class GetFavoriteAnimals extends AnimalEvent {}
+
 class ToggleFavorite extends AnimalEvent {
   final String animalId;
 

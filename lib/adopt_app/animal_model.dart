@@ -4,6 +4,7 @@ class AnimalModel {
   final String imageUrl;
   final int age;
   final String breed;
+  final String type;
   final bool isFavorite;
 
   const AnimalModel({
@@ -12,16 +13,19 @@ class AnimalModel {
     required this.imageUrl,
     required this.age,
     required this.breed,
+    required this.type,
     this.isFavorite = false,
   });
 
-  AnimalModel copyWith(bool? isFavorite) {
+  //es un parametro nombrado
+  AnimalModel copyWith({bool? isFavorite}) {
     return AnimalModel(
       id: id,
       name: name,
       imageUrl: imageUrl,
       age: age,
       breed: breed,
+      type: type,
       isFavorite: isFavorite ?? this.isFavorite,
     );
   }

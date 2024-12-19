@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/adopt_app/bloc/animal_bloc.dart';
 import 'package:flutter_application_1/menu.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 //import 'package:flutter_application_1/todo_provider/todo_provider.dart';
 //import 'package:provider/provider.dart';
 //import 'package:flutter_application_1/my_widgets.dart';
@@ -10,7 +12,10 @@ import 'package:flutter_application_1/menu.dart';
 } */
 
 void main() {
-  runApp(const MaterialApp(home: Menu()));
+  runApp(BlocProvider(
+    create: (context) => AnimalBloc(),
+    child: const MaterialApp(home: Menu()),
+  ));
 }
 
 /* void main() {

@@ -3,6 +3,7 @@ import 'package:flutter_application_1/adopt_app/bloc/animal_bloc.dart';
 import 'package:flutter_application_1/adopt_app/widgets/adopt_appbar.dart';
 import 'package:flutter_application_1/adopt_app/widgets/adopt_filter.dart';
 import 'package:flutter_application_1/adopt_app/widgets/adopt_list.dart';
+import 'package:flutter_application_1/adopt_app/widgets/favorite_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AdoptAppPage extends StatelessWidget {
@@ -10,8 +11,8 @@ class AdoptAppPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-        create: (context) => AnimalBloc()..add(GetAnimals()),
+    return BlocProvider.value(
+        value: context.read<AnimalBloc>()..add(GetAnimals()),
         child: const Body());
   }
 }
@@ -31,6 +32,14 @@ class Body extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        //el index de la vista principal, deja "marcado" el que esta indicado
+        currentIndex: 0,
+        onTap: (index) {
+          if (index == 1) {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const FavoritePage()));
+          }
+        },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
