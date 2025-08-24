@@ -36,7 +36,8 @@ class AdoptListWidget extends StatelessWidget {
                     breed: animal.breed,
                     age: animal.age,
                     isFavorite: animal.isFavorite,
-                    context: context);
+                    context: context,
+                    imageUrl: animal.imageUrl);
               },
             );
           } else {
@@ -57,25 +58,30 @@ class AdoptListWidget extends StatelessWidget {
     required int age,
     required bool isFavorite,
     required BuildContext context,
+    required String imageUrl,
   }) {
     return Container(
-      color: Colors.white,
       width: 200,
       height: size.height * 0.3,
-      padding: const EdgeInsets.only(top: 16, bottom: 16),
       margin: const EdgeInsets.only(right: 8, left: 8),
+      padding: const EdgeInsets.only(top: 8, bottom: 8),
+      decoration: BoxDecoration(
+        color: isFavorite ? const Color(0xFFfdecea) : Colors.white,
+        borderRadius: BorderRadius.circular(16),
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const CircleAvatar(
-            radius: 80,
-            backgroundColor: Color(0xFF8fd2c1),
+          CircleAvatar(
+            radius: 24,
+            backgroundColor: const Color(0xFF8fd2c1),
+            backgroundImage: NetworkImage(imageUrl),
           ),
           Text(name,
               style: const TextStyle(
                 color: Color(0xFF463521),
                 fontWeight: FontWeight.w700,
-                fontSize: 24,
+                fontSize: 20,
               )),
           Text(breed,
               style: const TextStyle(
@@ -95,7 +101,7 @@ class AdoptListWidget extends StatelessWidget {
               },
               icon: Icon(
                 isFavorite ? Icons.favorite : Icons.favorite_border,
-                size: 36,
+                size: 20,
                 color: isFavorite ? Colors.red : Colors.black,
               ))
         ],

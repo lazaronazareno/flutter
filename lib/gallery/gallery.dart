@@ -11,19 +11,19 @@ class GalleryPage extends StatefulWidget {
 
 class _GalleryPageState extends State<GalleryPage> {
   final List<String> images = [
-    "https://picsum.photos/250?image=1",
-    "https://picsum.photos/250?image=2",
-    "https://picsum.photos/250?image=3",
-    "https://picsum.photos/250?image=4",
+    "https://cataas.com/cat",
+    "https://cataas.com/cat",
+    "https://cataas.com/cat",
+    "https://cataas.com/cat",
   ];
 
   int cantGalleryImagesView = 2;
 
   addImage() {
-    int lastIndex = int.parse(images.last.split("=").last);
-    log(lastIndex.toString());
+    /* int lastIndex = int.parse(images.last.split("=").last);
+    log(lastIndex.toString()); */
     setState(() {
-      images.add("https://picsum.photos/250?image=${lastIndex + 1}");
+      images.add("https://cataas.com/cat");
     });
   }
 

@@ -4,7 +4,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Buddy",
     "breed": "Golden Retriever",
     "age": 3,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
     "type": "dog",
   },
   {
@@ -12,7 +13,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Whiskers",
     "breed": "Siamese",
     "age": 3,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/1276553/pexels-photo-1276553.jpeg",
     "type": "cat",
   },
   {
@@ -20,7 +22,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Max",
     "breed": "Bulldog",
     "age": 2,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg",
     "type": "dog",
   },
   {
@@ -28,7 +31,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Luna",
     "breed": "Persian",
     "age": 1,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
     "type": "cat",
   },
   {
@@ -36,7 +40,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Charlie",
     "breed": "Beagle",
     "age": 2,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/460775/pexels-photo-460775.jpeg",
     "type": "dog",
   },
   {
@@ -44,7 +49,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Spike",
     "breed": "Iguana",
     "age": 1,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/325490/pexels-photo-325490.jpeg",
     "type": "reptile",
   },
   {
@@ -52,7 +58,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Rango",
     "breed": "Chameleon",
     "age": 3,
-    "imageUrl": "",
+    "imageUrl":
+        "https://images.pexels.com/photos/325490/pexels-photo-325490.jpeg",
     "type": "reptile",
   },
   {
@@ -60,7 +67,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Tweety",
     "breed": "Canary",
     "age": 2,
-    "imageUrl": "",
+    "imageUrl":
+        "https://lh3.googleusercontent.com/dfPCbYnQbimdw4v9b3Aw1u1hiiEU6BfDLaN1Xh7z_aGYEJGuPQ2ot4EbdFGrJGUP1mTTn2LiEXchQav5MlVDKQ=s900",
     "type": "bird",
   },
   {
@@ -68,7 +76,8 @@ const List<Map<String, dynamic>> animalData = [
     "name": "Polly",
     "breed": "Parrot",
     "age": 4,
-    "imageUrl": "",
+    "imageUrl":
+        "https://lh3.googleusercontent.com/dfPCbYnQbimdw4v9b3Aw1u1hiiEU6BfDLaN1Xh7z_aGYEJGuPQ2ot4EbdFGrJGUP1mTTn2LiEXchQav5MlVDKQ=s900",
     "type": "bird",
   }
 ];
